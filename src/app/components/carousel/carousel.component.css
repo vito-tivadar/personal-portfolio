@@ -1,0 +1,19 @@
+:host {
+  position: relative;
+  overflow: hidden visible;
+
+  backdrop-filter: blur(10rem);
+  mask: linear-gradient(90deg, transparent 0%, black 15%, black 85%, transparent calc(100%));
+}
+
+.card {
+  position: absolute;
+  top: 2.5%;
+  height: 95%;
+  transition: 1s;
+}
+
+.card.active {
+  height: calc(100% - 4px);
+  top: 2px;
+}

@@ -1,0 +1,13 @@
+:host {
+  font-size: var(--fs-description);
+  color: black;
+}
+
+span {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 0.25em 0.75em;
+  border-radius: 0.25em;
+  white-space: nowrap;
+}

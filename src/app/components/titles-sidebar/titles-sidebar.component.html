@@ -1,0 +1,12 @@
+<div class="title-container">
+  <div *ngFor="let section of sections; count as c; index as i">
+    <a
+      [class.active]="i == activeTitle"
+      [id]="i"
+      [href]="generateSectionID(section.title)"
+      [style.font-size]="'calc(' + countAllLetters() / 50 + 'vh)'"
+    >
+      {{ section.title }}
+    </a>
+  </div>
+</div>

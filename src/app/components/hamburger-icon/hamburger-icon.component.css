@@ -1,0 +1,46 @@
+:host {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  height: 70%;
+  width: 90%;
+  gap: 20%;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .container:hover > .line {
+    width: 100%;
+  }
+}
+
+.line {
+  margin: 0 0 0 auto;
+  display: block;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: var(--accent);
+  transition: 0.5s ease-in-out;
+}
+
+.extended {
+  background-color: var(--secondary);
+  width: 100%;
+}
+
+.top {
+  width: 75%;
+}
+
+.middle {
+  width: 100%;
+}
+
+.bottom {
+  width: 60%;
+}

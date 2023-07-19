@@ -1,0 +1,28 @@
+:host {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.75rem;
+  padding: 0;
+
+  background-color: transparent;
+}
+
+picture {
+  display: block;
+  height: 2rem;
+  width: 2.5rem;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.logo {
+  height: 100%;
+}
+
+hamburger-icon {
+  height: 2rem;
+  z-index: 10;
+}

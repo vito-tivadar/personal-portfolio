@@ -1,0 +1,125 @@
+:host {
+  --border-radius: 1rem;
+
+  position: relative;
+  display: block;
+  /* aspect-ratio: calc(9 / 16); */
+  border-radius: var(--border-radius);
+  filter: brightness(30%);
+  /* transition: 0.5s; */
+  border: 1px solid var(--accent);
+}
+
+:host:hover {
+  filter: none;
+  filter: brightness(67%);
+  color: var(--secondary);
+}
+
+:host.active {
+  filter: none;
+  color: var(--secondary);
+  /* box-shadow: 0 0 1px var(--accent); */
+}
+
+.image {
+  position: absolute;
+  display: block;
+  inset: 0;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-left-radius: calc(var(--border-radius) + 1px);
+  border-bottom-right-radius: calc(var(--border-radius) + 1px);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.text-container {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 3.5rem auto 2.5rem;
+
+  bottom: 0;
+  height: 7.7rem;
+  padding: 1.5rem;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+  background-color: var(--background);
+  backdrop-filter: blur(10rem);
+  mask: linear-gradient(0deg, black 0%, hsla(0, 0%, 0%, 0.75) calc(100% - 3.5rem), transparent calc(100%));
+
+  transition: 0.8s;
+  overflow: auto;
+}
+
+@media (prefers-color-scheme: light) {
+  .text-container {
+    color: var(--background);
+    background-color: var(--accent);
+  }
+}
+
+.text-container.extended {
+  grid-template-rows: 3.5rem auto max-content;
+  height: 80%;
+}
+
+.title {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: baseline;
+  grid-row: 1;
+}
+
+.description {
+  grid-row: 2;
+  height: 1.5em;
+  font-size: var(--fs-description);
+  margin-bottom: 0.5rem;
+  text-align: justify;
+
+  text-overflow: ' ...';
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
+  cursor: default;
+}
+
+.description.extended {
+  height: 100%;
+  text-overflow: unset;
+  overflow: auto;
+  white-space: normal;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-row: 3;
+  overflow: hidden;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+  padding-block: 0.75rem;
+}
+
+.icons {
+  position: absolute;
+  top: 1.5rem;
+  inset-inline: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-inline: 1.5rem;
+  height: 1.5rem;
+}
+
+.icons > a {
+  height: 100%;
+  aspect-ratio: 1;
+  fill: var(--secondary);
+  margin-left: 0.5rem;
+}

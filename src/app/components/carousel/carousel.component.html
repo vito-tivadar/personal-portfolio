@@ -1,0 +1,11 @@
+<carousel-card
+  *ngFor="let card of displayedCards; index as i"
+  [card]="displayedCards[i]"
+  class="card"
+  [class.active]="i + 1 == displayedCardsMidpoint"
+  [isActive]="i + 1 == displayedCardsMidpoint"
+  [style.left]="'calc(' + (this.carouselWidth - this.cardWidth) / 2 + 'px)'"
+  [style.width]="'calc(' + cardWidth + 'px - ' + gapBetweenCards + ' / 2)'"
+  [style.transform]="'translateX(' + calculateTranslate(i) + ')'"
+  (click)="shiftCards(shiftTo(i + 1), true)"
+></carousel-card>

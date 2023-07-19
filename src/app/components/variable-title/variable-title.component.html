@@ -1,0 +1,12 @@
+<span
+  *ngFor="let letter of titleLetters; count as c; index as i"
+  [style.font-variation-settings]="calculateFontSettings(i, c, [100, 700], [75, 125])"
+  [style.text-transform]="uppercase ? 'uppercase' : ''"
+>
+  {{ letter }}
+</span>
+<!-- [style.letter-spacing]="'calc(' + i / c + ' * -0.25em)'" -->
+<!-- {{ letter }} 
+  [style.font-weight]="calculateFontWeight(i + 1, c, [200, 900])"
+  [style.font-stretch]="calculateFontWidth(i + 1, c, [50, 200])"
+-->

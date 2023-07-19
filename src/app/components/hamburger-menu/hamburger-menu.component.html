@@ -1,0 +1,15 @@
+<div class="inner-container">
+  <div class="links">
+    <a *ngFor="let link of links" [href]="link.href">
+      <div class="inner-link">
+        <img *ngIf="link.iconSrc" [src]="link.iconSrc" />
+        <span>{{ link.text }}</span>
+      </div>
+    </a>
+  </div>
+
+  <span class="warning"
+    >Migration to a new, upgraded server is in progress. Website could be temporarily unavailable in near future.
+    <br /><br />Thank you for your patience.</span
+  >
+</div>

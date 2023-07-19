@@ -1,0 +1,25 @@
+<navbar style="grid-row: 1"></navbar>
+
+<titles-sidebar [sections]="sections" [activeTitle]="activeSection"></titles-sidebar>
+<div #sectionsWrapper class="content-wrapper" style="grid-row: 2" (scroll)="onActiveSectionChange(sectionsWrapper)">
+  <section *ngFor="let section of sections; first as f; index as i" id="{{ generateSectionId(section.title) }}">
+    <ng-template [ngIf]="f">
+      <!-- ABOUT ME -->
+      <div class="about-me upper-section">
+        <span class="before-title">Hi, I am</span>
+        <span class="space"></span>
+        <variable-title title="Vito&MediumSpace;Tivadar"></variable-title>
+      </div>
+      <div class="about-me description">
+        {{ section.description }}
+      </div>
+    </ng-template>
+    <!-- OTHER -->
+    <ng-template [ngIf]="f == false">
+      <carousel *ngIf="section.projects.length" [cards]="section.projects" style="grid-row: 1"> </carousel>
+      <div class="other description">{{ section.description }}</div>
+    </ng-template>
+  </section>
+</div>
+
+<hamburger-menu> </hamburger-menu>

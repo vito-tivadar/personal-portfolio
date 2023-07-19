@@ -1,0 +1,42 @@
+[theme='default'] {
+  --text: #ededee;
+  --background: #080708;
+  --primary: #d07601;
+  --secondary: var(--text);
+  --accent: #505353;
+}
+
+[theme='light'] {
+  --text: #101718;
+  --background: #fcfdfd;
+  --primary: #d07601;
+  --secondary: var(--text);
+  --accent: #505353;
+}
+
+:root {
+  --text: #ededee;
+  --background: #080708;
+  --primary: #d07601;
+  --secondary: var(--text);
+  --accent: #505353;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #101718;
+    --background: #fcfdfd;
+    --primary: #d07601;
+    --secondary: var(--text);
+    --accent: #505353;
+  }
+}
+
+/* Custom Themes */
+[theme='red'] {
+  --text: red;
+  --background: red;
+  --primary: red;
+  --secondary: red;
+  --accent: red;
+}
