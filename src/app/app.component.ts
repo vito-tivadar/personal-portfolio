@@ -223,11 +223,11 @@ export class AppComponent {
         {
           title: 'Personal portfolio',
           description:
-            'Portfolio frontend was made using Angular 15 and is communicating with MySQL database trough ASP.NET Web API backend. Portfolio is running on docker.',
+            'Portfolio frontend was made using Angular 15. Portfolio is running on docker. Project is still work in progress. Currently I am adding communication with MySQL database trough ASP.NET Web API backend ability to log in and edit sections and projects. ',
           image_url: 'https://assets.vitotivadar.ovh/software/portfolio.png',
           links: [
             {
-              href: '',
+              href: 'https://github.com/vito-tivadar/personal-portfolio',
               iconSrc: 'https://assets.vitotivadar.ovh/icons/github.png',
             },
           ],
@@ -246,13 +246,45 @@ export class AppComponent {
             },
           ],
         },
+        // Auth backend
+        {
+          title: 'Auth backend service',
+          description:
+            'Central authorization and authentication api service that can be used with multiple self hosting services. Based on ASP.NET and MySQL database.',
+          image_url: 'https://assets.vitotivadar.ovh/software/auth.png',
+          links: [
+            {
+              href: 'https://github.com/vito-tivadar/auth-backend',
+              iconSrc: 'https://assets.vitotivadar.ovh/icons/github.png',
+            },
+          ],
+          tags: [
+            {
+              text: 'Active development',
+              color: TagColor.yellow,
+            },
+            {
+              text: 'C# ASP.NET',
+              color: TagColor.red,
+            },
+            {
+              text: 'MIT Licence',
+              color: TagColor.purple,
+            },
+          ],
+        },
         // dashboard
         {
           title: 'Dashboard',
           description:
             'Dashboard is project for monitoring diferent types of services. It is in early development phase and for my personal needs. Current backend is written in ASP.NET.',
           image_url: 'https://assets.vitotivadar.ovh/software/dashboard.png',
-          links: [],
+          links: [
+            {
+              href: 'https://github.com/vito-tivadar/Various-Angular-Projects',
+              iconSrc: 'https://assets.vitotivadar.ovh/icons/github.png',
+            },
+          ],
           tags: [
             {
               text: 'Active development',
@@ -263,7 +295,7 @@ export class AppComponent {
               color: TagColor.blue,
             },
             {
-              text: 'Unreleased',
+              text: 'MIT Licence',
               color: TagColor.purple,
             },
           ],
@@ -276,7 +308,7 @@ export class AppComponent {
           image_url: 'https://assets.vitotivadar.ovh/software/docker.png',
           links: [
             {
-              href: '',
+              href: 'https://github.com/vito-tivadar/ServerRESTInterfaceApp',
               iconSrc: 'https://assets.vitotivadar.ovh/icons/github.png',
             },
           ],
@@ -303,7 +335,7 @@ export class AppComponent {
           image_url: 'https://assets.vitotivadar.ovh/software/fem.png',
           links: [
             {
-              href: '',
+              href: 'https://github.com/vito-tivadar/PalicneKonstrukcijeMKE',
               iconSrc: 'https://assets.vitotivadar.ovh/icons/github.png',
             },
           ],
@@ -330,7 +362,7 @@ export class AppComponent {
           image_url: 'https://assets.vitotivadar.ovh/software/navigation.png',
           links: [
             {
-              href: '',
+              href: 'https://github.com/vito-tivadar/Various-Angular-Projects',
               iconSrc: 'https://assets.vitotivadar.ovh/icons/github.png',
             },
           ],
@@ -355,7 +387,12 @@ export class AppComponent {
           description:
             'Angular modal library is simple, customizable modal component, written manly for dashboard project.',
           image_url: 'https://assets.vitotivadar.ovh/software/modal.png',
-          links: [],
+          links: [
+            {
+              href: 'https://github.com/vito-tivadar/Various-Angular-Projects',
+              iconSrc: 'https://assets.vitotivadar.ovh/icons/github.png',
+            },
+          ],
           tags: [
             {
               text: 'Active development',
@@ -379,7 +416,7 @@ export class AppComponent {
           image_url: 'https://assets.vitotivadar.ovh/software/radio.png',
           links: [
             {
-              href: '',
+              href: 'https://github.com/vito-tivadar/RadioPlayer',
               iconSrc: 'https://assets.vitotivadar.ovh/icons/github.png',
             },
           ],
@@ -404,7 +441,12 @@ export class AppComponent {
           description:
             "This is not single project, but multiple bots. When I was in high school and me and my friends were constantly hanging out on discord I made a lot of discord bots. Some were useful, others were just for fun. Most of them were written in Discord.js v11 and v12 and probably don't work anymore.",
           image_url: 'https://assets.vitotivadar.ovh/software/discord.png',
-          links: [],
+          links: [
+            {
+              href: 'https://drive.google.com/file/d/1eYQOOJkT3jvMGQvN-Tr0T5wE-pfBLquA/view?usp=sharing',
+              iconSrc: 'https://assets.vitotivadar.ovh/icons/github.png',
+            },
+          ],
           tags: [
             {
               text: 'Active development',
@@ -436,11 +478,11 @@ export class AppComponent {
         {
           title: 'Dial gauge reader',
           description:
-            "Dialgauge reader is middleware device that reads values from dial gauge's serial port. Goal of this project was to replace BL-Touch on 3D printer with dial gauge and improve accuracy of bed leveling.",
+            "Dial gauge reader is middleware device that reads values from dial gauge's serial port. Goal of this project was to replace BL-Touch on 3D printer with dial gauge and improve accuracy of bed leveling.",
           image_url: 'https://assets.vitotivadar.ovh/embedded/gauge.png',
           links: [
             {
-              href: '',
+              href: 'https://drive.google.com/file/d/1ogc1wPT0CY_cfY-qvVryMHoQZLf6plPc/view?usp=sharing',
               iconSrc: 'https://assets.vitotivadar.ovh/icons/google_drive.png',
             },
           ],
