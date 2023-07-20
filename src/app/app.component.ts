@@ -326,7 +326,7 @@ export class AppComponent {
         {
           title: 'Navigation simulator',
           description:
-            "navigation simulator is simple project written in Angular. This project was written in few hours, it's main purpose was testing how GPS tiles work and how to calculate position and dynamic rendering of tiles. This project is starting point for potential cycling computer me and my friend want to make.",
+            "Navigation simulator is simple project written in Angular. This project was written in few hours, it's main purpose was testing how GPS tiles work and how to calculate position and dynamic rendering of tiles. This project is starting point for potential cycling computer me and my friend want to make.",
           image_url: 'https://assets.vitotivadar.ovh/software/navigation.png',
           links: [
             {
@@ -376,7 +376,7 @@ export class AppComponent {
           title: 'Radio player',
           description:
             'This is very basic program for listening to online radios. It is from early 2015 and is nothing special, but it is one of my firt projects and I am still using it.',
-          image_url: 'https://assets.vitotivadar.ovh/software/player.png',
+          image_url: 'https://assets.vitotivadar.ovh/software/radio.png',
           links: [
             {
               href: '',
@@ -424,24 +424,6 @@ export class AppComponent {
             },
           ],
         },
-        // tiui ?? rename
-        {
-          title: 'Dynamic component library',
-          description:
-            "UI Library is a project for dynamic generation of UI components. Projects is around 45-50% complete and will become open source once is done. Project doesn't have propper name, because I wanted to name it TitaniumUI but component library with this name already exists.",
-          image_url: 'https://assets.vitotivadar.ovh/software/components.png',
-          links: [],
-          tags: [
-            {
-              text: 'Active development',
-              color: TagColor.yellow,
-            },
-            {
-              text: 'Unreleased',
-              color: TagColor.purple,
-            },
-          ],
-        },
       ],
       skills: [],
     },
@@ -473,7 +455,7 @@ export class AppComponent {
             },
           ],
         },
-        // ender 3 rest api
+        // ender 3 firmware
         {
           title: 'Ender 3 firmware',
           description: 'Configured Marlin firmware with custom written menus for various tasks.',
@@ -512,6 +494,82 @@ export class AppComponent {
         {
           title: 'Custom mouse PCB',
           description: '',
+          image_url: 'https://assets.vitotivadar.ovh/embedded/mouse.png',
+          links: [],
+          tags: [
+            {
+              text: 'Active development',
+              color: TagColor.yellow,
+            },
+            {
+              text: 'Unreleased',
+              color: TagColor.purple,
+            },
+          ],
+        },
+        // dial gauge converter
+        {
+          title: 'Dial gauge reader',
+          description:
+            "Dialgauge reader is middleware device that reads values from dial gauge's serial port. Goal of this project was to replace BL-Touch on 3D printer with dial gauge and improve accuracy of bed leveling.",
+          image_url: 'https://assets.vitotivadar.ovh/embedded/gauge.png',
+          links: [
+            {
+              href: '',
+              iconSrc: 'https://assets.vitotivadar.ovh/icons/google_drive.png',
+            },
+          ],
+          tags: [
+            {
+              text: 'Active development',
+              color: TagColor.yellow,
+            },
+            {
+              text: 'MIT Licence',
+              color: TagColor.purple,
+            },
+          ],
+        },
+        // ender 3 firmware
+        {
+          title: 'Ender 3 firmware',
+          description: 'Configured Marlin firmware with custom written menus for various tasks.',
+          image_url: 'https://assets.vitotivadar.ovh/embedded/ender3.png',
+          links: [],
+          tags: [
+            {
+              text: 'Inactive development',
+              color: TagColor.yellow,
+            },
+            {
+              text: 'Unreleased',
+              color: TagColor.purple,
+            },
+          ],
+        },
+        // server case display with temperature monitoring and fan control
+        {
+          title: 'Server controller',
+          description:
+            'Raspberry pi controlled display in server rack. Development of this project just started. Initial goal of the project is to measure and display temperature inside rack and control cooling fans based on temperature.',
+          image_url: 'https://assets.vitotivadar.ovh/embedded/server.png',
+          links: [],
+          tags: [
+            {
+              text: 'Active development',
+              color: TagColor.yellow,
+            },
+            {
+              text: 'Unreleased',
+              color: TagColor.purple,
+            },
+          ],
+        },
+        // custom mouse pcb
+        {
+          title: 'Custom mouse PCB',
+          description:
+            'Idea for this project came when I was modeling custmo mouse shell. Project is based on STM32F103 and it currently supports communication with PMW3389 sensor.',
           image_url: 'https://assets.vitotivadar.ovh/embedded/mouse.png',
           links: [],
           tags: [
