@@ -40,6 +40,8 @@
   display: grid;
   grid-template-rows: 3.5rem auto 2.5rem;
 
+  width: calc(100% - 3rem);
+
   bottom: 0;
   height: 7.7rem;
   padding: 1.5rem;
@@ -47,7 +49,7 @@
 
   background-color: var(--background);
   backdrop-filter: blur(10rem);
-  mask: linear-gradient(0deg, black 0%, hsla(0, 0%, 0%, 0.75) calc(100% - 3.5rem), transparent calc(100%));
+  mask: linear-gradient(0deg, black 0%, hsla(0, 0%, 0%, 0.9) calc(100% - 3.5rem), transparent calc(100%));
 
   transition: 0.8s;
   overflow: auto;
